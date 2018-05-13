@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="main.resources.model.TGhxxEntity" table="t_ghxx" schema="hospital">
+        <id name="ghbh">
+            <column name="GHBH" sql-type="char(6)" length="6"/>
+        </id>
+        <property name="hzbh">
+            <column name="HZBH" sql-type="char(6)" length="6"/>
+        </property>
+        <property name="ysbh">
+            <column name="YSBH" sql-type="char(6)" length="6"/>
+        </property>
+        <property name="brbh">
+            <column name="BRBH" sql-type="char(6)" length="6"/>
+        </property>
+        <property name="ghrc">
+            <column name="GHRC" sql-type="int(11)"/>
+        </property>
+        <property name="thbz">
+            <column name="THBZ" sql-type="tinyint(1)"/>
+        </property>
+        <property name="ghfy">
+            <column name="GHFY" sql-type="decimal(8,2)" precision="8" scale="2"/>
+        </property>
+        <property name="rqsj">
+            <column name="RQSJ" sql-type="datetime"/>
+        </property>
+    </class>
+</hibernate-mapping>

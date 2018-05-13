@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/hospital</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="connection.username">huieric</property>
+    <property name="connection.password">zjh2416256HG</property>
+    <property name="hibernate.show_sql">false</property>
+      <mapping resource="main/resources/model/TBrxxEntity.hbm.xml"/>
+      <mapping class="main.resources.model.TBrxxEntity"/>
+      <mapping resource="main/resources/model/TGhxxEntity.hbm.xml"/>
+      <mapping class="main.resources.model.TGhxxEntity"/>
+      <mapping class="main.resources.model.THzxxEntity"/>
+      <mapping resource="main/resources/model/THzxxEntity.hbm.xml"/>
+      <mapping class="main.resources.model.TKsxxEntity"/>
+      <mapping resource="main/resources/model/TKsxxEntity.hbm.xml"/>
+      <mapping class="main.resources.model.TKsysEntity"/>
+      <mapping resource="main/resources/model/TKsysEntity.hbm.xml"/>
+      <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

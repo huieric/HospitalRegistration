@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="hibernate.cfg.xml" />
+          <unit-entry name="main:resources:model:hibernate.cfg.xml" value="064e3359-9a6d-4ef7-a709-75cfc2971c8d" />
+        </datasource-map>
+        <naming-strategy-map>
+          <unit-entry name="hibernate.cfg.xml" />
+        </naming-strategy-map>
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/hibernate.cfg.xml" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="10" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Java EE 6" level="project" />
+    <orderEntry type="library" name="Hibernate 5.2.16-5.2.16" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://C:/Program Files/Java/jdk-10/lib/mysql-connector-java-5.1.46" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://C:/Program Files/Java/jdk-10/lib/mysql-connector-java-5.1.46/src" />
+        </SOURCES>
+        <jarDirectory url="file://C:/Program Files/Java/jdk-10/lib/mysql-connector-java-5.1.46" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="jfoenix-9.0.4" level="project" />
+    <orderEntry type="library" name="controlsfx-9.0.0" level="project" />
+  </component>
+</module>

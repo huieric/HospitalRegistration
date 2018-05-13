@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.StatusBar?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.MainWindow_Patient">
+   <top>
+      <Pane prefHeight="43.0" prefWidth="840.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="timeLabel" layoutX="228.0" prefHeight="43.0" prefWidth="193.0" text="2018年4月15日 19:41:30">
+               <font>
+                  <Font name="Microsoft YaHei" size="15.0" />
+               </font>
+            </Label>
+            <Group layoutX="445.0" layoutY="5.0">
+               <children>
+                  <JFXTextField fx:id="filterField" layoutX="29.0" prefHeight="26.0" prefWidth="166.0" />
+                  <ImageView fitHeight="21.0" fitWidth="21.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/search.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group>
+               <children>
+                  <Label fx:id="welcomeLabel" layoutX="41.0" layoutY="7.0" prefHeight="34.0" prefWidth="80.0" text="张柏芝, 您好">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="5.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/patient_avatar.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="712.0" layoutY="8.0" />
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <JFXTreeTableView fx:id="recordTable" prefHeight="453.0" prefWidth="640.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Group />
+                  <Group layoutX="31.0" layoutY="317.0" />
+                  <JFXButton fx:id="confirmButton" buttonType="RAISED" layoutX="116.0" layoutY="399.0" prefHeight="33.0" prefWidth="58.0" ripplerFill="#9ccde8" style="-fx-background-color: #248fcd;" text="确定" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei" size="12.0" />
+                     </font></JFXButton>
+                  <JFXButton fx:id="resetButton" buttonType="RAISED" layoutX="33.0" layoutY="399.0" prefHeight="33.0" prefWidth="58.0" ripplerFill="#9ccde8" style="-fx-background-color: #248fcd;" text="重置" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></JFXButton>
+                  <Group layoutX="6.0" layoutY="163.0" />
+                  <Label fx:id="feeTextLabel" layoutX="6.0" layoutY="280.0" prefHeight="24.0" prefWidth="62.0" text="应缴金额" />
+                  <Group layoutX="6.0" layoutY="365.0" />
+                  <Label fx:id="feeLabel" layoutX="68.0" layoutY="280.0" prefHeight="24.0" prefWidth="71.0" />
+                  <JFXComboBox fx:id="deptBox" editable="true" layoutX="7.0" layoutY="36.0" prefHeight="28.0" prefWidth="188.0" promptText="科室名称" />
+                  <JFXComboBox fx:id="doctBox" editable="true" layoutX="7.0" layoutY="96.0" prefHeight="28.0" prefWidth="188.0" promptText="医生姓名" />
+                  <JFXComboBox fx:id="typeBox" editable="true" layoutX="7.0" layoutY="162.0" prefHeight="28.0" prefWidth="188.0" promptText="号种类别" />
+                  <JFXComboBox fx:id="nameBox" editable="true" layoutX="7.0" layoutY="227.0" prefHeight="28.0" prefWidth="188.0" promptText="号种名称" />
+                  <JFXSpinner fx:id="spinner" layoutX="139.0" layoutY="316.0" prefHeight="18.0" prefWidth="18.0" />
+                  <Label fx:id="accountTextLabel" layoutX="7.0" layoutY="316.0" prefHeight="24.0" prefWidth="62.0" text="账户余额" />
+                  <Label fx:id="accountLabel" layoutX="69.0" layoutY="316.0" prefHeight="24.0" prefWidth="61.0" text="100.00元" />
+               </children>
+            </Pane>
+         </center>
+         <bottom>
+            <StatusBar fx:id="statusBar" styleText="" text="" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </right>
+</BorderPane>
