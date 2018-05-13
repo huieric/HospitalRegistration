@@ -3,11 +3,17 @@
 
 ## 运行截图
 
-![登录界面](Screenshots/Login.png)
+![登录界面](/screenshots/Login.png)
 
-![病人界面](Screenshots/patient.png)
 
-![医生界面1](Screenshots/doctor1.png)
 
-![医生界面2](Screenshots/doctor2.png)
+![病人界面](/screenshots/patient.png)
+
+
+
+![医生界面1](/screenshots/doctor1.png)
+
+
+
+![医生界面2](/screenshots/doctor2.png)
 
